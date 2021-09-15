@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Auml;&icirc;&aacute;&agrave;&acirc;&euml;&aring;&iacute;&egrave;&aring; &icirc;&aacute;&uacute;&aring;&ecirc;&ograve;&icirc;&acirc;">
+		<param name="Local" value="adding.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Oacute;&auml;&agrave;&euml;&aring;&iacute;&egrave;&aring; &icirc;&aacute;&uacute;&aring;&ecirc;&ograve;&icirc;&acirc;">
+		<param name="Local" value="removing.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Ntilde;&icirc;&otilde;&eth;&agrave;&iacute;&aring;&iacute;&egrave;&aring; &ecirc;&agrave;&eth;&ograve;&ucirc;">
+		<param name="Local" value="savin.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Ccedil;&agrave;&atilde;&eth;&oacute;&ccedil;&ecirc;&agrave; &ecirc;&agrave;&eth;&ograve;&ucirc;">
+		<param name="Local" value="loading.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>

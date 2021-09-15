@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Lab02">
+		<Project filename="MainDll/MainDll.cbp" />
+		<Project filename="MainStatic/MainStatic.cbp">
+			<Depends filename="MainDll/MainDll.cbp" />
+		</Project>
+		<Project filename="MainDynamicLinux/MainDynamicLinux.cbp">
+			<Depends filename="MainDll/MainDll.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

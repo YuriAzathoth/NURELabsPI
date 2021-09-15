@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Lab03" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Lab03" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-std=c++1z" />
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Lab03" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++1z" />
+					<Add option="-m64" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++1z" />
+			<Add option="-m64" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-include wx_pch.h" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-DWX_PRECOMP" />
+			<Add directory="$(#wx)/include" />
+			<Add directory="$(#wx)/lib/gcc_x64_dll/mswu" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+			<Add directory="$(#wx)/lib/gcc_x64_dll/mswu" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-m64" />
+			<Add option="-mthreads" />
+			<Add library="libwxmsw31u_richtext.a" />
+			<Add library="libwxmsw31u_xrc.a" />
+			<Add library="libwxmsw31u_aui.a" />
+			<Add library="libwxmsw31u_media.a" />
+			<Add library="libwxbase31u_net.a" />
+			<Add library="libwxmsw31u_gl.a" />
+			<Add library="libwxmsw31u_qa.a" />
+			<Add library="libwxbase31u_xml.a" />
+			<Add library="libwxmsw31u_adv.a" />
+			<Add library="libwxmsw31u_html.a" />
+			<Add library="libwxmsw31u_core.a" />
+			<Add library="libwxbase31u.a" />
+			<Add directory="$(#wx)/lib/gcc_x64_dll" />
+		</Linker>
+		<Unit filename="City.h" />
+		<Unit filename="IObject.cpp" />
+		<Unit filename="IObject.h" />
+		<Unit filename="IShape.cpp" />
+		<Unit filename="IShape.h" />
+		<Unit filename="ISpline.cpp" />
+		<Unit filename="ISpline.h" />
+		<Unit filename="Lab03App.cpp" />
+		<Unit filename="Lab03App.h" />
+		<Unit filename="Lab03Main.cpp" />
+		<Unit filename="Lab03Main.h" />
+		<Unit filename="MapFormat.cpp" />
+		<Unit filename="MapFormat.h" />
+		<Unit filename="ObjectManager.cpp" />
+		<Unit filename="ObjectManager.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wx_pch.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="wxsmith/Lab03frame.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="Lab03App.cpp" main="Lab03Frame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/Lab03frame.wxs" src="Lab03Main.cpp" hdr="Lab03Main.h" fwddecl="0" i18n="1" name="Lab03Frame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
