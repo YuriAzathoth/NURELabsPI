@@ -1,0 +1,246 @@
+<?xml version="1.0" standalone="yes"?>
+<employees>
+  <xs:schema id="employees" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="employees" msdata:IsDataSet="true" msdata:Locale="en-US">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Employees">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id" type="xs:string" minOccurs="0" />
+                <xs:element name="surname" type="xs:string" minOccurs="0" />
+                <xs:element name="name" type="xs:string" minOccurs="0" />
+                <xs:element name="fathername" type="xs:string" minOccurs="0" />
+                <xs:element name="birthdate" type="xs:string" minOccurs="0" />
+                <xs:element name="birthplace" type="xs:string" minOccurs="0" />
+                <xs:element name="address" type="xs:string" minOccurs="0" />
+                <xs:element name="house" type="xs:string" minOccurs="0" />
+                <xs:element name="apartment" type="xs:string" minOccurs="0" />
+                <xs:element name="passportnum" type="xs:string" minOccurs="0" />
+                <xs:element name="issuedate" type="xs:string" minOccurs="0" />
+                <xs:element name="department" type="xs:string" minOccurs="0" />
+                <xs:element name="position" type="xs:string" minOccurs="0" />
+                <xs:element name="speciality" type="xs:string" minOccurs="0" />
+                <xs:element name="education" type="xs:string" minOccurs="0" />
+                <xs:element name="salary" type="xs:string" minOccurs="0" />
+                <xs:element name="employment" type="xs:string" minOccurs="0" />
+                <xs:element name="appointment" type="xs:string" minOccurs="0" />
+                <xs:element name="editdate" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Employees>
+    <id>1</id>
+    <surname>Малышко</surname>
+    <name>Сергей</name>
+    <fathername>Валентинович</fathername>
+    <birthdate>12.08.1964</birthdate>
+    <birthplace>г. Харьков</birthplace>
+    <address>ул. Академика Павлова</address>
+    <house>140</house>
+    <apartment>224</apartment>
+    <passportnum>НЕ543234</passportnum>
+    <issuedate>12.07.1980</issuedate>
+    <department>Администрация</department>
+    <position>Генеральный директор</position>
+    <speciality />
+    <education>Высшее</education>
+    <salary>25000</salary>
+    <employment>20.04.2002</employment>
+    <appointment>12.08.2016</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>2</id>
+    <surname>Левченко</surname>
+    <name>Степан</name>
+    <fathername>Ильич</fathername>
+    <birthdate>28.02.1972</birthdate>
+    <birthplace>г. Киев</birthplace>
+    <address>ул. Свободы</address>
+    <house>22</house>
+    <apartment>64</apartment>
+    <passportnum>АК325325</passportnum>
+    <issuedate>28.02.1988</issuedate>
+    <department>Администрация</department>
+    <position>Коммерческий директор</position>
+    <speciality>Экономист</speciality>
+    <education>Высшее</education>
+    <salary>22000</salary>
+    <employment>28.05.2000</employment>
+    <appointment>02.06.2018</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>3</id>
+    <surname>Карпенко</surname>
+    <name>Андрей</name>
+    <fathername>Даниилович</fathername>
+    <birthdate>18.02.1978</birthdate>
+    <birthplace>г. Харьков</birthplace>
+    <address>ул. Героев Труда</address>
+    <house>34а</house>
+    <apartment>100</apartment>
+    <passportnum>ЛЕ739485</passportnum>
+    <issuedate>18.02.1994</issuedate>
+    <department>Администрация</department>
+    <position>Финансовый директор</position>
+    <speciality>Экономист</speciality>
+    <education>Высшее</education>
+    <salary>20000</salary>
+    <employment>20.04.2004</employment>
+    <appointment>20.05.2014</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>4</id>
+    <surname>Гордеенко</surname>
+    <name>Геннадий</name>
+    <fathername>Максимович</fathername>
+    <birthdate>24.10.1968</birthdate>
+    <birthplace>г. Днепропетровск</birthplace>
+    <address>ул. Кирова</address>
+    <house>12а</house>
+    <apartment>44</apartment>
+    <passportnum>ВН342935</passportnum>
+    <issuedate>28.10.1984</issuedate>
+    <department>Разработка ПО</department>
+    <position>Менеджер проекта</position>
+    <speciality>Программист C++</speciality>
+    <education>Высшее</education>
+    <salary>15000</salary>
+    <employment>12.05.2008</employment>
+    <appointment>04.02.2014</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>5</id>
+    <surname>Ващенко</surname>
+    <name>Николай</name>
+    <fathername>Васильевич</fathername>
+    <birthdate>02.12.1966</birthdate>
+    <birthplace>г. Харьков</birthplace>
+    <address>ул. Артёма</address>
+    <house>16б</house>
+    <apartment>220</apartment>
+    <passportnum>ДС732905</passportnum>
+    <issuedate>02.12.1982</issuedate>
+    <department>Разработка ПО</department>
+    <position>Руководитель отдела разработки</position>
+    <speciality>Программист C++</speciality>
+    <education>Высшее</education>
+    <salary>12000</salary>
+    <employment>14.02.2004</employment>
+    <appointment>06.05.2018</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>6</id>
+    <surname>Андриенко</surname>
+    <name>Вячеслав</name>
+    <fathername>Борисович</fathername>
+    <birthdate>02.02.1958</birthdate>
+    <birthplace>г. Киев</birthplace>
+    <address>ул. Блюхера</address>
+    <house>88</house>
+    <apartment>4</apartment>
+    <passportnum>УД392076</passportnum>
+    <issuedate>02.02.1974</issuedate>
+    <department>Разработка ПО</department>
+    <position>Разработчик программного обеспечения</position>
+    <speciality>Программист C++</speciality>
+    <education>Высшее</education>
+    <salary>8000</salary>
+    <employment>04.04.2016</employment>
+    <appointment>20.05.2018</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>7</id>
+    <surname>Ермоленко</surname>
+    <name>Леонид</name>
+    <fathername>Андреевич</fathername>
+    <birthdate>02.05.1992</birthdate>
+    <birthplace>г. Суммы</birthplace>
+    <address>ул. Командарма Корка</address>
+    <house>20</house>
+    <apartment>2</apartment>
+    <passportnum>НК937520</passportnum>
+    <issuedate>02.05.2008</issuedate>
+    <department>Разработка ПО</department>
+    <position>Разработчик программного обеспечения</position>
+    <speciality>Программист C++</speciality>
+    <education>Высшее</education>
+    <salary>6000</salary>
+    <employment>04.10.2010</employment>
+    <appointment>20.08.2014</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>8</id>
+    <surname>Гавриленко</surname>
+    <name>Игорь</name>
+    <fathername>Александрович</fathername>
+    <birthdate>20.05.1956</birthdate>
+    <birthplace>г. Полтава</birthplace>
+    <address>ул. Ак. Барабашова</address>
+    <house>248</house>
+    <apartment>202</apartment>
+    <passportnum>ГВ639820</passportnum>
+    <issuedate>20.05.1972</issuedate>
+    <department>Разработка ПО</department>
+    <position>Разработчик программного обеспечения</position>
+    <speciality>Программист С++</speciality>
+    <education>Высшее</education>
+    <salary>8000</salary>
+    <employment>22.04.2000</employment>
+    <appointment>08.02.2012</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>9</id>
+    <surname>Кравченко</surname>
+    <name>Борис</name>
+    <fathername>Геннадьевич</fathername>
+    <birthdate>12.04.1996</birthdate>
+    <birthplace>г. Харьков</birthplace>
+    <address>ул. Ак. Павлова</address>
+    <house>140а</house>
+    <apartment>210</apartment>
+    <passportnum>НТ582291</passportnum>
+    <issuedate>12.04.2012</issuedate>
+    <department>Разработка ПО</department>
+    <position>Разработчик программного обеспечения</position>
+    <speciality>Программист С++</speciality>
+    <education>Высшее</education>
+    <salary>6000</salary>
+    <employment>16.04.2014</employment>
+    <appointment>24.02.2018</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+  <Employees>
+    <id>10</id>
+    <surname>Костенко</surname>
+    <name>Артем</name>
+    <fathername>Ильич</fathername>
+    <birthdate>28.12.1988</birthdate>
+    <birthplace>г. Одесса</birthplace>
+    <address>ул. Плехановская</address>
+    <house>122</house>
+    <apartment>124</apartment>
+    <passportnum>ОА932753</passportnum>
+    <issuedate>28.12.2004</issuedate>
+    <department>Тестирование</department>
+    <position>Главный тестировщик</position>
+    <speciality>Обсуживание программный систем</speciality>
+    <education>Высшее</education>
+    <salary>4000</salary>
+    <employment>02.04.2006</employment>
+    <appointment>16.02.2016</appointment>
+    <editdate>20.05.2018</editdate>
+  </Employees>
+</employees>
