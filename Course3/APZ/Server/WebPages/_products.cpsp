@@ -1,0 +1,62 @@
+<%
+	if (user.GetRole() == User::ERole::ADMINISTRATOR)
+		context->GetProducts().Load();
+	else
+		context->GetProducts().Load(ProductTable::EScope::USER, user.GetId());
+%>
+
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-10">
+			<div class="row">
+				<table class="table border">
+					<thead>
+						<tr>
+							<th scope="col"><%=l10n.Get("product.name")%></th>
+							<th scope="col"><%=l10n.Get("product.count")%></th>
+							<th scope="col"><%=l10n.Get("product.space")%></th>
+							<th scope="col"><%=l10n.Get("product.warehouse")%></th>
+							<th scope="col"><%=l10n.Get("product.date_begin")%></th>
+							<th scope="col"><%=l10n.Get("product.date_end")%></th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+<%
+	const ProductTable &table = context->GetProductTable();
+	int i = 0;
+	for (auto it = table.Get().cbegin(); it != table.Get().cend(); ++it, ++i)
+	{
+%>
+						<tr>
+							<td><%=l10n.Get(it->name)%></td>
+							<td><%=it->count%></td>
+							<td><%=it->space%></td>
+							<td><%=it->address%></td>
+							<td><%=it->date_begin%></td>
+							<td><%=it->date_end%></td>
+							<td>
+								<a href="/product-remove?id=<%=it->id%>" class="btn btn-secondary" role="button"><%=l10n.Get("product.remove")%>
+							</td>
+						</tr>
+<%
+	}
+%>
+					</tbody>
+				</table>
+			</div>
+			<div class="row justify-content-end">
+<%
+	if (user.GetRole() == User::ERole::ADMINISTRATOR)
+	{
+		%><a href="/page-admin-addprod" class="btn btn-primary col-2" role="button"><%=l10n.Get("product.create")%></a><%
+	}
+	else
+	{
+		%><a href="/page-addprod" class="btn btn-primary col-2" role="button"><%=l10n.Get("product.create")%></a><%
+	}
+%>
+			</div>
+		</div>
+	</div>
+</div>

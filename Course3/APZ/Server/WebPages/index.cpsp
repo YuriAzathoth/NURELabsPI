@@ -1,0 +1,55 @@
+<%@ page class="WebPage" %>
+<%@ page context="ServerContext*" %>
+
+<%!!
+class ServerContext;
+%>
+
+<%!
+#include "PCH.h"
+#include "Logic/CategoryTable.h"
+#include "Logic/ProductTable.h"
+#include "Logic/WarehouseTable.h"
+#include "Shared/ServerContext.h"
+#include "Web/WebContext.h"
+%>
+
+<%%
+	std::shared_ptr<WebContext> context = std::allocate_shared<WebContext>(boost::pool_allocator<WebContext>(), _context, request, response);
+	User			&user = context->GetUser();
+	Localization	&l10n = context->GetL10n();
+%>
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title><%=l10n.Get("main.company")%></title>
+	</head>
+	<body>
+		<%@ include file="_navbar.cpsp" %>
+<%
+	switch (context->GetPage())
+	{
+	case PageManager::EPage::HOME_CLIENT:		{ %><%@ include file="_products.cpsp" %><%		} break;
+	case PageManager::EPage::USER_LOGIN:		{ %><%@ include file="_form_login.cpsp" %><%	} break;
+	case PageManager::EPage::USER_REGISTER:		{ %><%@ include file="_form_register.cpsp" %><%	} break;
+	case PageManager::EPage::USER_EDIT:			{ %><%@ include file="_form_useredit.cpsp" %><%	} break;
+	case PageManager::EPage::PRODUCT_ADD:		{ %><%@ include file="_form_addprod.cpsp" %><%	} break;
+	case PageManager::EPage::HOME_ADMIN_WAREHOUSES:
+	case PageManager::EPage::HOME_ADMIN_CATEGORIES:
+	case PageManager::EPage::HOME_ADMIN_PRODUCTS:
+	case PageManager::EPage::HOME_ADMIN_REG_WARE:
+	case PageManager::EPage::HOME_ADMIN_REG_CAT:
+	case PageManager::EPage::HOME_ADMIN_ADD_PROD:	{ %><%@ include file="_home_admin.cpsp" %><% } break;
+	}
+%>
+		<script src="js/jquery-3.4.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+<li class="navbar-item">
+	<p class="nav-link"><%=l10n.Get("main.welcome")%></p>
+</li>
+<li class="navbar-item">
+	<a class="nav-link" href="/page-useredit"><%=user.GetName()%></a>
+</li>
+<li class="navbar-item">
+	<a class="nav-link" href="/page-home"><%=l10n.Get("main.home")%></a>
+</li>
+<li class="navbar-item">
+	<a class="nav-link" href="/user-logout"><%=l10n.Get("main.logout")%></a>
+</li>

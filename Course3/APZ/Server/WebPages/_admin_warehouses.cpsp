@@ -1,0 +1,42 @@
+<div class="row">
+	<table class="table border">
+		<thead>
+			<tr>
+				<th scope="col"><%=l10n.Get("warehouse.address")%></th>
+				<th scope="col"><%=l10n.Get("warehouse.cost")%></th>
+				<th scope="col"><%=l10n.Get("warehouse.spaceall")%></th>
+				<th scope="col"><%=l10n.Get("warehouse.spacefree")%></th>
+				<th scope="col"><%=l10n.Get("warehouse.temperature")%></th>
+				<th scope="col"><%=l10n.Get("warehouse.humidity")%></th>
+				<th scope="col"><%=l10n.Get("warehouse.ip")%></th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+<%
+	const WarehouseTable &table = context->GetWarehouseTable();
+	int i = 0;
+	for (auto it = table.Get().cbegin(); it != table.Get().cend(); ++it, ++i)
+	{
+%>
+			<tr>
+				<td><%=it->address%></td>
+				<td><%=it->cost%></td>
+				<td><%=it->space_busy%></td>
+				<td><%=it->space_free%></td>
+				<td><%=it->tempo%></td>
+				<td><%=static_cast<uint16_t>(it->humidity)%></td>
+				<td><%=it->ip%></td>
+				<td>
+					<a href="/warehouse-remove?id=<%=it->id%>" class="btn btn-secondary" role="button"><%=l10n.Get("warehouse.remove")%>
+				</td>
+			</tr>
+<%
+	}
+%>
+		</tbody>
+	</table>
+</div>
+<div class="row justify-content-end">
+	<a href="/page-admin-regware" class="btn btn-primary col-2" role="button"><%=l10n.Get("warehouse.create")%></a>
+</div>

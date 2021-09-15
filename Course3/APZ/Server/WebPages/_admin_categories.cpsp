@@ -1,0 +1,38 @@
+<div class="row">
+	<table class="table border">
+		<thead>
+			<tr>
+				<th scope="col"><%=l10n.Get("category.name")%></th>
+				<th scope="col"><%=l10n.Get("category.space")%></th>
+				<th scope="col"><%=l10n.Get("category.temp.min")%></th>
+				<th scope="col"><%=l10n.Get("category.temp.max")%></th>
+				<th scope="col"><%=l10n.Get("category.humidity.min")%></th>
+				<th scope="col"><%=l10n.Get("category.humidity.max")%></th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+<%
+	const CategoryTable &table = context->GetCategoryTable();
+	int i = 0;
+	for (auto it = table.Get().cbegin(); it != table.Get().cend(); ++it, ++i)
+	{
+%>
+			<tr>
+				<td><%=l10n.Get(it->name)%></td>
+				<td><%=it->space%></td>
+				<td><%=it->tmin%></td>
+				<td><%=it->tmax%></td>
+				<td><%=it->hmin%></td>
+				<td><%=it->hmax%></td>
+				<td><a href="/category-remove?id=<%=it->id%>" class="btn btn-secondary" role="button"><%=l10n.Get("category.remove")%></td>
+			</tr>
+<%
+	}
+%>
+		</tbody>
+	</table>
+</div>
+<div class="row justify-content-end">
+	<a href="/page-admin-regcat" class="btn btn-primary col-2" role="button"><%=l10n.Get("category.create")%></a>
+</div>

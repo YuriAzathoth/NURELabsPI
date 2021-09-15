@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-2">
+			<div class="col"><a href="/page-admin-warehouses"><%=l10n.Get("admin.warehouses")%></a></div>
+			<div class="col"><a href="/page-admin-categories"><%=l10n.Get("admin.categories")%></a></div>
+			<div class="col"><a href="/page-admin-products"><%=l10n.Get("admin.products")%></a></div>
+		</div>
+		<div class="col-10">
+<%
+	switch (context->GetPage())
+	{
+		case PageManager::EPage::HOME_ADMIN_WAREHOUSES:	{ %><%@ include file="_admin_warehouses.cpsp" %><%		}; break;
+		case PageManager::EPage::HOME_ADMIN_CATEGORIES:	{ %><%@ include file="_admin_categories.cpsp" %><%		}; break;
+		case PageManager::EPage::HOME_ADMIN_PRODUCTS:	{ %><%@ include file="_products.cpsp" %><%				}; break;
+		case PageManager::EPage::HOME_ADMIN_REG_WARE: 	{ %><%@ include file="_admin_form_regware.cpsp" %><%	}; break;
+		case PageManager::EPage::HOME_ADMIN_REG_CAT: 	{ %><%@ include file="_admin_form_regcat.cpsp" %><%		}; break;
+		case PageManager::EPage::HOME_ADMIN_ADD_PROD: 	{ %><%@ include file="_admin_form_addprod.cpsp" %><%	}; break;
+	}
+%>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,90 @@
+en.main.company = My Warehouse
+en.main.login = Login
+en.main.logout = Exit
+en.main.register = Register
+en.main.welcome = Welcome,
+en.main.home = Home
+
+en.warehouse.address = Address
+en.warehouse.space = Space
+en.warehouse.spaceall = All space
+en.warehouse.spacefree = Free space
+en.warehouse.temperature = Temperature
+en.warehouse.humidity = Humidity
+en.warehouse.cost = Rent cost
+en.warehouse.ip = IoT IP
+en.warehouse.create = Add
+en.warehouse.store = Store
+en.warehouse.remove = Remove
+en.warehouse.regform.name = Register warehouse
+en.warehouse.regform.submit = Accept
+
+en.category.name = Name
+en.category.temp = Temperature
+en.category.temp.min = Minimal temperature
+en.category.temp.max = Maximal temperature
+en.category.humidity = Humidity
+en.category.humidity.min = Minimal humidity
+en.category.humidity.max = Maximal humidity
+en.category.space = Required space
+en.category.create = Add category
+en.category.remove = Remove
+en.category.regform.name = Register category
+en.category.regform.submit = Accept
+
+en.product.name = Name
+en.product.count = Count
+en.product.space = Space
+en.product.date_begin = Begin date
+en.product.date_end = End date
+en.product.create = Store
+en.product.remove = Remove
+en.product.warehouse = Warehouse
+en.product.category = Product
+en.product.count = Count
+en.product.submit = Add
+
+en.edituser.name = Edit user data
+en.edituser.submit = Edit
+
+en.login-form.name = Login
+en.login-form.login = Login
+en.login-form.password = Password
+en.login-form.submit = Log-in
+
+en.reg-form.name = Registration
+en.reg-form.login = Login
+en.reg-form.pass1 = Password
+en.reg-form.pass2 = Confirm password
+en.reg-form.email = EMail
+en.reg-form.name = Real name
+en.reg-form.submit = Register
+
+en.wareadd-form.name = Warehouse registration
+en.wareadd-form.address = Address
+en.wareadd-form.space = Space
+en.wareadd-form.cost = Cost
+en.wareadd-form.ip = IoT IP
+
+en.admin.warehouses = Warehouses
+en.admin.categories = Categories
+en.admin.products = Products
+
+en.email.subject = My Warehouse login verification
+en.email.header = Hello,
+en.email.body = Confirm email link
+
+en.error.login = Invalid login or password
+en.error.invlogin = Login must contain only symbols and numbers
+en.error.invemail = Incorrect email
+en.error.invname = Incorrect name
+en.error.invpass = Password confirmation invalid
+en.error.busylogin = Login is already exists
+en.error.busyemail = Email is already exists
+en.error.invip = Invalid ip address
+
+en.product.tv = TV
+en.product.fridge = Fridge
+en.product.wheet = Wheet
+en.product.meat = Meat
+en.product.paper = Paper

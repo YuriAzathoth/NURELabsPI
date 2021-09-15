@@ -1,0 +1,8 @@
+<%
+	if (!context->IsError())
+	{
+%>
+	<div class="form-group text-md-center error-message"><%=context->GetError()%></div>
+<%
+	}
+%>

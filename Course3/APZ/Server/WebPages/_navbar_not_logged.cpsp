@@ -1,0 +1,6 @@
+<li class="navbar-item">
+	<a class="nav-link" href="/page-login"><%=l10n.Get("main.login")%></a>
+</li>
+<li class="navbar-item">
+	<a class="nav-link" href="/page-register"><%=l10n.Get("main.register")%></a>
+</li>

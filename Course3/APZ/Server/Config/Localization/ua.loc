@@ -1,0 +1,90 @@
+ua.main.company = My Warehouse
+ua.main.login = Логін
+ua.main.logout = Вийти
+ua.main.register = Реєстрація
+ua.main.welcome = Вітаємо,
+ua.main.home = Додому
+
+ua.warehouse.address = Адреса
+ua.warehouse.space = Простір
+ua.warehouse.spaceall = Увесь простір
+ua.warehouse.spacefree = Вільний простір
+ua.warehouse.temperature = Температура
+ua.warehouse.humidity = Вологість
+ua.warehouse.cost = Ціна за m3
+ua.warehouse.ip = IP адреса
+ua.warehouse.create = Додати склад
+ua.warehouse.store = Зберегти
+ua.warehouse.remove = Видалити
+ua.warehouse.regform.name = Зареэструвати склад
+ua.warehouse.regform.submit = Прийняти
+
+ua.category.name = Назва
+ua.category.temp = Температура
+ua.category.temp.min = Мінімальна температура
+ua.category.temp.max = Максимальна температура
+ua.category.humidity = Вологість
+ua.category.humidity.min = Мінімальна вологість
+ua.category.humidity.max = Максимальна вологість
+ua.category.space = Простір за одиницю
+ua.category.create = Додати товар
+ua.category.remove = Видалити
+ua.category.regform.name = Зареєструвати ктегорію
+ua.category.regform.submit = Прийняти
+
+ua.product.name = Назва
+ua.product.count = Кількість
+ua.product.space = Об`єм
+ua.product.date_begin = Дата надходження
+ua.product.date_end = Дата збуття
+ua.product.create = Додати
+ua.product.remove = Видалити
+ua.product.warehouse = Склад
+ua.product.category = Продукт
+ua.product.count = Кількісь
+ua.product.submit = Додати
+
+ua.edituser.name = Редагування даних користувача
+ua.edituser.submit = Прийняти
+
+ua.login-form.name = Авторизація
+ua.login-form.login = Логін
+ua.login-form.password = Пароль
+ua.login-form.submit = Увійти
+
+ua.reg-form.name = Реєстрація
+ua.reg-form.login = Логін
+ua.reg-form.pass1 = Пароль
+ua.reg-form.pass2 = Підтвердження паролю
+ua.reg-form.email = Електрона пошта
+ua.reg-form.name = Реальне ім`я
+ua.reg-form.submit = Зареєструватися
+
+ua.wareadd-form.name = Реєстрація складу
+ua.wareadd-form.address = Адреса
+ua.wareadd-form.space = Доступний простір
+ua.wareadd-form.cost = Ціна за аренду
+ua.wareadd-form.ip = IP адреса
+
+ua.admin.warehouses = Склади
+ua.admin.categories = Категорії
+ua.admin.products = Зберігання
+
+ua.email.subject = Підтвердження акаунту My Warehouse
+ua.email.header = Вітаємо,
+ua.email.body = Будь ласка підтвердіть ваш логін:
+
+ua.error.login = Невірний логін або пароль
+ua.error.invlogin = Логін має містити лише літери та цифри
+ua.error.invemail = Невірна адреса електроної пошти
+ua.error.invname = Невірне iм`я
+ua.error.invpass = Паролі не співпадають
+ua.error.busylogin = Логін вже існує
+ua.error.busyemail = Електрона пошта вже існує
+ua.error.invip = Невірна ip-адреса
+
+ua.product.tv = Телевiзор
+ua.product.fridge = Холодильник
+ua.product.wheet = Борошно
+ua.product.meat = М'ясо
+ua.product.paper = Папiр

@@ -1,0 +1,53 @@
+<main class="account-form">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<div class="card">
+					<div class="card">
+						<div class="card-header"><%=l10n.Get("reg-form.name")%></div>
+						<div class="card-body">
+							<form action="/user-register" method="post">
+								<div class="form-group row">
+									<label for="id-login" class="col-md-4 col-form-label text-md-right"><%=l10n.Get("reg-form.login")%></label>
+									<div class="col-md-6">
+										<input type="text" id="id-login" class="form-control" name="login" required autofocus>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="id-password1" class="col-md-4 col-form-label text-md-right"><%=l10n.Get("reg-form.pass1")%></label>
+									<div class="col-md-6">
+										<input type="password" id="id-password1" class="form-control" name="pass1" required>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="id-password2" class="col-md-4 col-form-label text-md-right"><%=l10n.Get("reg-form.pass2")%></label>
+									<div class="col-md-6">
+										<input type="password" id="id-password2" class="form-control" name="pass2" required>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="id-email" class="col-md-4 col-form-label text-md-right"><%=l10n.Get("reg-form.email")%></label>
+									<div class="col-md-6">
+										<input type="email" id="id-email" class="form-control" name="email" required>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="id-name" class="col-md-4 col-form-label text-md-right"><%=l10n.Get("reg-form.name")%></label>
+									<div class="col-md-6">
+										<input type="text" id="id-name" class="form-control" name="name" required>
+									</div>
+								</div>
+								<%@ include file="_error_label.cpsp" %>
+								<div class="col-md-6 offset-md-4">
+									<button type="submit" class="btn btn-primary">
+										<%=l10n.Get("reg-form.submit")%>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

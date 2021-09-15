@@ -1,0 +1,2 @@
+INCLUDE (CompilePages REQUIRED)
+POCO_COMPILE_PAGES (PATH Server/WebPages)

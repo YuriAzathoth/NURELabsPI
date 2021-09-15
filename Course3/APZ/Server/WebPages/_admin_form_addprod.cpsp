@@ -1,0 +1,64 @@
+<%
+	CategoryTable &cat_table	= context->GetCategoryTable();
+	WarehouseTable &ware_table	= context->GetWarehouseTable();
+%>
+
+<main class="account-form">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<div class="card">
+					<div class="card">
+						<div class="card-header"><%=l10n.Get("login-form.name")%></div>
+						<div class="card-body">
+							<form action="/product-admin-add" method="post">
+								<div class="form-group row">
+									<label for="id-warehouse" class="col-md-4 col-form-label text-md-right"><%=l10n.Get("product.warehouse")%></label>
+									<div class="col-md-6">
+										<select id="id-warehouse" class="form-control selcls" name="ware" autofocus>
+<%
+	for (const Warehouse &ware : ware_table.Get())
+	{
+%>
+											<option><%=ware.address%></option>
+<%
+	}
+%>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="id-product" class="col-md-4 col-form-label text-md-right"><%=l10n.Get("product.category")%></label>
+									<div class="col-md-6">
+										<select id="id-product" class="form-control selcls" name="prod" autofocus>
+<%
+	for (const Category &cat : cat_table.Get())
+	{
+%>
+											<option><%=cat.name%></option>
+<%
+	}
+%>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="id-count" class="col-md-4 col-form-label text-md-right"><%=l10n.Get("product.count")%></label>
+									<div class="col-md-6">
+										<input type="text" id="id-count" class="form-control" name="count" required autofocus>
+									</div>
+								</div>
+								<%@ include file="_error_label.cpsp" %>
+								<div class="col-md-6 offset-md-4">
+									<button type="submit" class="btn btn-primary">
+										<%=l10n.Get("product.submit")%>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
