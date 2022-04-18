@@ -1,0 +1,22 @@
+﻿@page
+@model PNetKR.Pages.Orders.DetailsModel
+@{
+	ViewData["Title"] = "Product details";
+}
+
+<div>
+	<h4>Product information</h4>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Product.Name)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Product.Name)</dd>
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Product.Price)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Product.Price)</dd>
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Product.Available)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Product.Available)</dd>
+	</dl>
+</div>
+
+<div>
+	<a asp-page="/Products">Back to List</a>
+</div>

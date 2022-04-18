@@ -1,0 +1,38 @@
+﻿@page "{handler?}"
+@model PNetKR.Pages.Orders.EditModel
+@{
+	ViewData["Title"] = "Create order";
+}
+
+<div class="row">
+	<div class="col-md-4">
+		<form method="post">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label class="control-label">Customer</label>
+				@Html.DropDownListFor(x => x.CustomerId, new SelectList(Model.Customers, "Id", "FullName"), new { @class="form-control" })
+			</div>
+			<div class="form-group">
+				<label class="control-label">Product</label>
+				@Html.DropDownListFor(x => x.ProductId, new SelectList(Model.Products, "Id", "Name"), new { @class="form-control" })
+			</div>
+			<div class="form-group">
+				<label asp-for="Order.Count" class="control-label"></label>
+				<input asp-for="Order.Count" class="form-control" />
+				<span asp-validation-for="Order.Count" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Create" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</div>
+
+<div>
+	<a asp-page="/Orders">Back to List</a>
+</div>
+
+@section Scripts
+{
+	@Html.RenderPartialAsync("_ValidationScriptsPartial");
+}

@@ -1,0 +1,25 @@
+﻿@page
+@model PNetKR.Pages.Customers.DetailsModel
+@{
+	ViewData["Title"] = "Product details";
+}
+
+<div>
+	<h4>Product information</h4>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Customer.FirstName)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Customer.FirstName)</dd>
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Customer.LastName)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Customer.LastName)</dd>
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Customer.Email)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Customer.Email)</dd>
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Customer.Phone)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Customer.Phone)</dd>
+	</dl>
+	<a class="btn btn-primary" asp-page="/Orders" asp-route-Id="@Model.Customer.Id">Orders</a>
+</div>
+
+<div>
+	<a asp-page="/Products">Back to List</a>
+</div>

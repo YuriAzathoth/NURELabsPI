@@ -1,0 +1,30 @@
+﻿@page
+@model PNetKR.Pages.Customers.DeleteModel
+@{
+	ViewData["Title"] = "Delete customer";
+}
+
+<h1>Delete</h1>
+
+<p class="text-danger">@Model.ErrorMessage</p>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+	<h4>Customer</h4>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Customer.FirstName)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Customer.FirstName)</dd>
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Customer.LastName)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Customer.LastName)</dd>
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Customer.Email)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Customer.Email)</dd>
+		<dt class="col-sm-2">@Html.DisplayNameFor(m => m.Customer.Phone)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(m => m.Customer.Phone)</dd>
+	</dl>
+	<form method="post">
+		<input type="hidden" asp-for="Customer.Id" />
+		<input type="submit" value="Delete" class="btn btn-danger" />
+		<a asp-page="/Customers">Back to list</a>
+	</form>
+</div>
